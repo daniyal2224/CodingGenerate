@@ -64,7 +64,9 @@ namespace CodeAnalyzer
             ClassDeclarationSyntax? program = SyntaxFactory.ClassDeclaration(
                 identifier:
                     nameof(Program))
-                .AddMembers(main);
+                .AddMembers(
+                    items:
+                        main);
 
             NamespaceDeclarationSyntax? rootNameSpace = SyntaxFactory.NamespaceDeclaration(
                 name:
